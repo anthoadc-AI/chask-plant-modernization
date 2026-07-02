@@ -15,7 +15,7 @@ Portfolio-grade repository documenting the real consulting engagement executed b
 | Phase | Name | Status |
 |---|---|---|
 | 0 | Foundations & Governance | ✅ Complete |
-| 1 | Data Engineering | 🔲 Pending |
+| 1 | Data Engineering | ✅ Complete |
 | 2 | Data Science | 🔲 Pending |
 | 3 | Energy Efficiency & Process Optimization | 🔲 Pending |
 | 4 | Visible Products (Dashboard + Docs Site) | 🔲 Pending |
