@@ -16,7 +16,7 @@ Portfolio-grade repository documenting the real consulting engagement executed b
 |---|---|---|
 | 0 | Foundations & Governance | ✅ Complete |
 | 1 | Data Engineering | ✅ Complete |
-| 2 | Data Science | 🔲 Pending |
+| 2 | Data Science | ✅ Complete |
 | 3 | Energy Efficiency & Process Optimization | 🔲 Pending |
 | 4 | Visible Products (Dashboard + Docs Site) | 🔲 Pending |
 | 5 | Portfolio Polish | 🔲 Pending |
@@ -29,16 +29,20 @@ Portfolio-grade repository documenting the real consulting engagement executed b
 chask-plant-modernization/
 ├── .github/              # CI workflow and GitHub templates
 ├── data/
-│   ├── raw/              # Real monthly dataset (29 observations, Jan 2020–May 2022)
+│   ├── raw/              # Reconstructed monthly dataset (see data dictionary)
 │   ├── staging/          # Validated, schema-checked data
-│   └── analytics/        # Aggregated KPIs and model outputs
-├── docs/
-│   └── source-documents/ # Original Spanish client documents (not translated)
-├── notebooks/            # Exploratory analysis notebooks
+│   └── analytics/        # Enriched KPIs + synthetic daily dataset
+├── docs/                 # Data dictionary, findings, source documents
+├── notebooks/            # Exploratory analysis notebooks (Phase 2)
 ├── project-management/   # Charter, WBS, schedule, risk register, cost baseline
+├── reports/figures/      # Static PNG + interactive HTML figures (Phase 2)
 ├── src/chask/            # Python package (all reusable logic lives here)
-└── tests/                # pytest unit tests
+└── tests/                # pytest unit tests (123 tests)
 ```
+
+> **Data note**: The monthly dataset is a reproducible reconstruction calibrated to
+> documented engineering results. Original client records are confidential.
+> See [docs/data-dictionary.md](docs/data-dictionary.md).
 
 ---
 
@@ -57,5 +61,9 @@ Requires Python >= 3.10.
 ```bash
 make lint    # ruff check + ruff format --check
 make format  # ruff check --fix + ruff format
-make test    # pytest
+make test     # pytest (123 tests)
+make pipeline # run data pipeline (ingest → validate → transform)
+make datagen  # regenerate synthetic daily dataset
+make figures  # generate all analysis figures (reports/figures/)
+make analysis # statistical summary + figures
 ```

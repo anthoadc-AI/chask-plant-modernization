@@ -35,3 +35,6 @@ jobs:
 
       - name: Smoke test — datagen
         run: make datagen
+
+      - name: Smoke test — figures
+        run: make figures
