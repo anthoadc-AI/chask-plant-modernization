@@ -1,4 +1,4 @@
-.PHONY: install lint format test
+.PHONY: install lint format test pipeline datagen
 
 install:
 	pip install -e ".[dev]"
@@ -13,3 +13,9 @@ format:
 
 test:
 	pytest
+
+pipeline:
+	python -m chask.pipeline.run
+
+datagen:
+	python -m chask.datagen.synthetic

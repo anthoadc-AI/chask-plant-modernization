@@ -29,3 +29,9 @@ jobs:
 
       - name: Test
         run: make test
+
+      - name: Smoke test — pipeline
+        run: make pipeline
+
+      - name: Smoke test — datagen
+        run: make datagen
