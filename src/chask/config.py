@@ -8,7 +8,7 @@ RAW_DIR = _REPO_ROOT / "data" / "raw"
 STAGING_DIR = _REPO_ROOT / "data" / "staging"
 ANALYTICS_DIR = _REPO_ROOT / "data" / "analytics"
 
-RAW_DATASET = "dataset_panificadora.csv"
+RAW_DATASET = "monthly_reconstructed.csv"
 
 INTERVENTION_CUTOFF = "2021-08-31"
 
