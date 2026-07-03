@@ -17,7 +17,7 @@ Portfolio-grade repository documenting the real consulting engagement executed b
 | 0 | Foundations & Governance | ✅ Complete |
 | 1 | Data Engineering | ✅ Complete |
 | 2 | Data Science | ✅ Complete |
-| 3 | Energy Efficiency & Process Optimization | 🔲 Pending |
+| 3 | Energy Efficiency & Process Optimization | ✅ Complete |
 | 4 | Visible Products (Dashboard + Docs Site) | 🔲 Pending |
 | 5 | Portfolio Polish | 🔲 Pending |
 
