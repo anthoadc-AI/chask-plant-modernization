@@ -38,3 +38,6 @@ jobs:
 
       - name: Smoke test — figures
         run: make figures
+
+      - name: Smoke test — energy
+        run: make energy

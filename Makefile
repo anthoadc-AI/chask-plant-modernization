@@ -1,4 +1,4 @@
-.PHONY: install lint format test pipeline datagen figures analysis
+.PHONY: install lint format test pipeline datagen figures analysis energy
 
 install:
 	pip install -e ".[dev]"
@@ -25,3 +25,6 @@ figures:
 
 analysis:
 	python -m chask.analysis.run
+
+energy:
+	python -m chask.energy.run
