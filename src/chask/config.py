@@ -14,6 +14,20 @@ INTERVENTION_CUTOFF = "2021-08-31"
 
 RANDOM_SEED = 42
 
+# --- Energy analysis assumptions ---
+# Bolivia ENDE industrial tariff, circa 2021 (assumption — update if rate changes)
+ENERGY_TARIFF_USD_KWH: float = 0.065
+# Bolivia SIN grid emission factor (approximate; IEA 2020 / CNDC data)
+EMISSION_FACTOR_KG_CO2_KWH: float = 0.40
+# Nominal monthly operating hours (24 h/day × 30 days)
+MONTHLY_OPERATING_HOURS: float = 720.0
+# Post-intervention installed capacity multiplier (engineering report)
+POST_CAPACITY_MULTIPLIER: float = 1.5
+# ROI analysis discount rate (assumption)
+DISCOUNT_RATE: float = 0.10
+# Total project investment (USD)
+TOTAL_INVESTMENT_USD: float = 85_000.0
+
 COLUMNS: list[str] = [
     "fecha",
     "produccion_kg",
