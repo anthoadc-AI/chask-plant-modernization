@@ -1,4 +1,4 @@
-# Project Charter — Panificadora Chask Plant Modernization
+﻿# Project Charter — Panificadora Chask Plant Modernization
 
 ## Project Information
 
@@ -7,7 +7,7 @@
 | Project title | Plant Expansion and Resource Optimization — Panificadora Chask |
 | Client | Panificadora Chask |
 | Executing firm | INGEDAV S.R.L. (Ingeniería, Diseño y Automatización) |
-| Project director | Anthony Davila |
+| Project director | Anthony Dávila |
 | Location | Av. Juan Manuel Sánchez, Punata, Cochabamba, Bolivia |
 | Start date | December 21, 2020 |
 | End date | June 4, 2022 |
@@ -84,7 +84,7 @@ formulation changes.
 | Stakeholder | Role | Interest |
 |---|---|---|
 | Panificadora Chask (ownership) | Client / Sponsor | ROI, production capacity, product quality |
-| Anthony Davila | Project Director | Successful delivery within scope and budget |
+| Anthony Dávila | Project Director | Successful delivery within scope and budget |
 | INGEDAV S.R.L. technical team | Executing team | Technical quality, safety |
 | Bakery production staff | End users | Operational ease, training |
 | Certified electrician | Technical partner | Electrical system compliance |
@@ -122,5 +122,5 @@ formulation changes.
 
 | Name | Role | Date |
 |---|---|---|
-| Anthony Davila | Energy Projects Engineer & Director, INGEDAV S.R.L. | December 21, 2020 |
+| Anthony Dávila | Energy Projects Engineer & Director, INGEDAV S.R.L. | December 21, 2020 |
 | Panificadora Chask ownership | Client Sponsor | December 21, 2020 |

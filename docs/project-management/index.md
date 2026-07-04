@@ -1,8 +1,8 @@
-# Project Management
+﻿# Project Management
 
 This section documents the project management artefacts for the
 **Panificadora Chask Plant Modernization** (Dec 2020 – Jun 2022),
-executed by **INGEDAV S.R.L.** under the direction of **Anthony Davila**.
+executed by **INGEDAV S.R.L.** under the direction of **Anthony Dávila**.
 
 ## Documents
 
@@ -20,7 +20,7 @@ executed by **INGEDAV S.R.L.** under the direction of **Anthony Davila**.
 |---|---|
 | Client | Panificadora Chask |
 | Executing firm | INGEDAV S.R.L. |
-| Project Director | Anthony Davila |
+| Project Director | Anthony Dávila |
 | Location | Punata, Cochabamba, Bolivia |
 | Period | Dec 21, 2020 – Jun 4, 2022 |
 | Total investment | USD 85,000 |

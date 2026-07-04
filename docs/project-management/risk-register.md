@@ -1,7 +1,7 @@
-# Risk Register — Panificadora Chask
+﻿# Risk Register — Panificadora Chask
 
 **Project**: Plant Expansion and Resource Optimization  
-**Executing firm**: INGEDAV S.R.L. | **Director**: Anthony Davila  
+**Executing firm**: INGEDAV S.R.L. | **Director**: Anthony Dávila  
 **Period**: December 2020 – June 2022
 
 Scale: Probability and Impact rated 1 (Low) – 3 (High). Risk Score = Probability × Impact.

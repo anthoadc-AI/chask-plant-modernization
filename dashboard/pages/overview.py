@@ -53,7 +53,7 @@ def _delta_color(direction: str) -> str:
 st.title("Panificadora Chask — Plant Modernization")
 st.caption(
     "Panificadora Chask · INGEDAV S.R.L. · Punata, Cochabamba, Bolivia"
-    " · Dec 2020 – Jun 2022 · Project Director: Anthony Davila"
+    " · Dec 2020 – Jun 2022 · Project Director: Anthony Dávila"
 )
 
 df = _load()

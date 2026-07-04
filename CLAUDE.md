@@ -1,4 +1,4 @@
-# CLAUDE.md — chask-plant-modernization
+﻿# CLAUDE.md — chask-plant-modernization
 
 Persistent context and rules for Claude Code. Read this before any task.
 
@@ -7,7 +7,7 @@ Persistent context and rules for Claude Code. Read this before any task.
 Portfolio-grade repository documenting a real consulting project: the plant
 modernization and energy optimization of **Panificadora Chask**, an industrial
 bakery in Punata, Cochabamba, Bolivia (Dec 21, 2020 – Jun 4, 2022), executed by
-**INGEDAV S.R.L.** with **Anthony Davila** as project director. The repo
+**INGEDAV S.R.L.** with **Anthony Dávila** as project director. The repo
 demonstrates competency in project management, energy efficiency, process
 optimization, data engineering, and data science.
 

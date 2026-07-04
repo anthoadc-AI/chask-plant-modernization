@@ -1,7 +1,7 @@
-# Work Breakdown Structure (WBS) — Panificadora Chask
+﻿# Work Breakdown Structure (WBS) — Panificadora Chask
 
 ## Project: Plant Expansion and Resource Optimization
-**Executing firm**: INGEDAV S.R.L. | **Director**: Anthony Davila  
+**Executing firm**: INGEDAV S.R.L. | **Director**: Anthony Dávila  
 **Period**: December 2020 – June 2022
 
 ---
@@ -42,11 +42,11 @@
 
 | ID | Work Package | Deliverable | Responsible |
 |---|---|---|---|
-| 1.1 | Technical inventory of all plant equipment | Equipment inventory with age, power, and condition | Anthony Davila |
-| 1.2 | Real-time electrical monitoring (30-day period) | Consumption profile per circuit; identified faults in motors and connections | Anthony Davila + Electrician |
-| 1.3 | Production flow mapping | Process flowchart with bottleneck identification (kneading, laminating) | Anthony Davila |
-| 1.4 | Process time measurement | Cycle-time data per production stage | Anthony Davila |
-| 1.5 | Diagnosis report | Written report with identified inefficiencies and recommended interventions | Anthony Davila |
+| 1.1 | Technical inventory of all plant equipment | Equipment inventory with age, power, and condition | Anthony Dávila |
+| 1.2 | Real-time electrical monitoring (30-day period) | Consumption profile per circuit; identified faults in motors and connections | Anthony Dávila + Electrician |
+| 1.3 | Production flow mapping | Process flowchart with bottleneck identification (kneading, laminating) | Anthony Dávila |
+| 1.4 | Process time measurement | Cycle-time data per production stage | Anthony Dávila |
+| 1.5 | Diagnosis report | Written report with identified inefficiencies and recommended interventions | Anthony Dávila |
 
 **Key findings from Phase 1**:
 - Manual egg mixing, kneading, and laminating created production bottlenecks.
@@ -61,11 +61,11 @@
 
 | ID | Work Package | Deliverable | Responsible |
 |---|---|---|---|
-| 2.1 | CAD modeling with SolidWorks | 3D models of new areas, equipment layout, and material flow | Anthony Davila |
-| 2.2 | New machinery specification | Technical spec for industrial kneader, laminator, and mixers | Anthony Davila |
-| 2.3 | Energy efficiency plan | Motor replacement schedule; EMS architecture | Anthony Davila + Electrician |
+| 2.1 | CAD modeling with SolidWorks | 3D models of new areas, equipment layout, and material flow | Anthony Dávila |
+| 2.2 | New machinery specification | Technical spec for industrial kneader, laminator, and mixers | Anthony Dávila |
+| 2.3 | Energy efficiency plan | Motor replacement schedule; EMS architecture | Anthony Dávila + Electrician |
 | 2.4 | Electrical system upgrade design | Single-line diagram for modernized electrical installation | Certified Electrician |
-| 2.5 | Project execution plan | Updated schedule, budget allocation, procurement plan | Anthony Davila |
+| 2.5 | Project execution plan | Updated schedule, budget allocation, procurement plan | Anthony Dávila |
 
 ---
 
@@ -75,8 +75,8 @@
 | ID | Work Package | Deliverable | Responsible |
 |---|---|---|---|
 | 3.1 | Manufacturing of new machinery at INGEDAV S.R.L. | Fabricated kneader, laminator, and industrial mixers meeting sanitary regulations | INGEDAV shop |
-| 3.2 | Expansion of production and storage areas | New areas compliant with schedule and quality standards | Anthony Davila |
-| 3.3 | Equipment installation & commissioning | All new equipment installed, calibrated, and operational by August 2021 | Anthony Davila |
+| 3.2 | Expansion of production and storage areas | New areas compliant with schedule and quality standards | Anthony Dávila |
+| 3.3 | Equipment installation & commissioning | All new equipment installed, calibrated, and operational by August 2021 | Anthony Dávila |
 | 3.4 | EMS implementation | Energy Management System monitoring live electricity data across the plant | INGEDAV + Electrician |
 | 3.5 | Electrical system modernization | Motor replacements completed; corrected wiring and power factor | Certified Electrician |
 
@@ -89,10 +89,10 @@
 
 | ID | Work Package | Deliverable | Responsible |
 |---|---|---|---|
-| 4.1 | Operator training — new machinery | Training sessions completed; operators certified on kneader, laminator, mixers | Anthony Davila |
-| 4.2 | EMS training | Staff trained on reading and acting on EMS data | Anthony Davila |
-| 4.3 | Preventive maintenance program | Written maintenance calendar with inspection intervals and checklists | Anthony Davila |
-| 4.4 | Project closure report | Final report documenting methodology, data analysis, results, and lessons learned | Anthony Davila |
+| 4.1 | Operator training — new machinery | Training sessions completed; operators certified on kneader, laminator, mixers | Anthony Dávila |
+| 4.2 | EMS training | Staff trained on reading and acting on EMS data | Anthony Dávila |
+| 4.3 | Preventive maintenance program | Written maintenance calendar with inspection intervals and checklists | Anthony Dávila |
+| 4.4 | Project closure report | Final report documenting methodology, data analysis, results, and lessons learned | Anthony Dávila |
 
 ---
 

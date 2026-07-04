@@ -1,7 +1,7 @@
-# Cost Baseline — Panificadora Chask
+﻿# Cost Baseline — Panificadora Chask
 
 **Project**: Plant Expansion and Resource Optimization  
-**Executing firm**: INGEDAV S.R.L. | **Director**: Anthony Davila  
+**Executing firm**: INGEDAV S.R.L. | **Director**: Anthony Dávila  
 **Total approved budget**: USD 85,000  
 **Period**: December 21, 2020 – June 4, 2022
 

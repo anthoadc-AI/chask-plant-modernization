@@ -8,7 +8,7 @@ closure report (2022) and the company profile document.
 All rows are synthetically constructed from the design parameters below. The output
 is explicitly labeled as a reconstruction in the filename, data dictionary, and README.
 
-Design parameters approved by project director Anthony Davila.
+Design parameters approved by project director Anthony Dávila.
 
 Run with::
 

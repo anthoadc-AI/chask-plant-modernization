@@ -1,7 +1,7 @@
-# Project Schedule — Panificadora Chask
+﻿# Project Schedule — Panificadora Chask
 
 **Project**: Plant Expansion and Resource Optimization  
-**Executing firm**: INGEDAV S.R.L. | **Director**: Anthony Davila  
+**Executing firm**: INGEDAV S.R.L. | **Director**: Anthony Dávila  
 **Period**: December 21, 2020 – June 4, 2022
 
 ---

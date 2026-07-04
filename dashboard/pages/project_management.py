@@ -44,7 +44,7 @@ charter_data = {
         "Plant Expansion and Resource Optimization — Panificadora Chask",
         "Panificadora Chask",
         "INGEDAV S.R.L. (Ingeniería, Diseño y Automatización)",
-        "Anthony Davila",
+        "Anthony Dávila",
         "Av. Juan Manuel Sánchez, Punata, Cochabamba, Bolivia",
         "December 21, 2020",
         "June 4, 2022",
