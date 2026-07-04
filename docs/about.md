@@ -1,24 +1,45 @@
 # About
 
-## Anthony Davila — Project Director
+## Anthony Dávila — Mechanical Engineer & Data Engineer
 
-Industrial engineer and data scientist with a background in energy efficiency
-consulting, plant automation, and project management for manufacturing clients
-in Bolivia and the broader Andean region.
+**Project role**: Energy Projects Engineer & Director at INGEDAV S.R.L. (2018–2022),
+project director of the Panificadora Chask plant modernization (Dec 2020 – Jun 2022).
 
-**Current role**: Project Director, INGEDAV S.R.L.  
-**Location**: Cochabamba, Bolivia
+**Current roles**:
 
-### Professional Profile
+- **INDA LLC** — Director of Engineering and Operations (Founder & CEO), Dec 2024 – present.
+  Sustainable engineering consulting for the food industry; building EnerVision Lite,
+  an industrial energy-efficiency analytics platform.
+- **INDACORP** — Founder & CEO, Jun 2022 – present, Punata.
+  Industrial services: project execution and mechanical design.
 
-- **Industrial Engineering** — Universidad Mayor de San Simón (UMSS), Cochabamba
-- **Specializations**: energy efficiency, process optimization, PLC automation,
-  predictive maintenance, data engineering
-- **Consulting focus**: SME manufacturing modernization with measurable ROI —
-  motor replacement, EMS implementation, production line optimization
+**Location**: Cochabamba, Bolivia (relocating to Houston, TX — authorized to work in the U.S.)
 
-### Links
+---
 
+## Education
+
+| Credential | Institution | Period |
+|---|---|---|
+| B.Sc. Mechanical Engineering | Universidad Mayor de San Simón (UMSS), Cochabamba | 2011–2016 |
+| Diplomado en Machine Learning y Ciencia de Datos | Universidad Privada Boliviana | 2024–2025 |
+| Professional Certificate in Data Engineering *(in progress, expected Aug 2026)* | MIT xPRO | Feb 2026 – Aug 2026 |
+
+---
+
+## Certifications
+
+- Machine Learning Specialization — DeepLearning.AI & Stanford University (2025)
+- Foundations of Data Science — Google (2025)
+- The Power of Statistics — Google (2025)
+- Regression Analysis — Google (2026)
+- Project Management Life Cycle — edX (2020)
+
+---
+
+## Links
+
+- **LinkedIn**: [linkedin.com/in/anthony-davila-034b921ba](https://linkedin.com/in/anthony-davila-034b921ba)
 - **GitHub**: [github.com/anthoadc-AI](https://github.com/anthoadc-AI)
 - **Email**: anthoadc@gmail.com
 
@@ -34,7 +55,7 @@ This portfolio repository demonstrates end-to-end competency across:
 | Data Engineering | Reproducible pipeline, Pandera schema validation, synthetic datagen |
 | Data Science | EDA, Z-score + Isolation Forest anomaly detection, Mann-Whitney / t-tests, ITS regression |
 | Energy Efficiency | Motor savings model (IE1→IE3), reconciliation, 3-scenario ROI with honest negative NPV |
-| Software Engineering | `src`-layout Python package, ruff, pytest (219 tests), CI matrix, Streamlit, MkDocs |
+| Software Engineering | `src`-layout Python package, ruff, pytest, CI matrix, Streamlit, MkDocs |
 
 All analytical figures are derived programmatically from the `chask` package —
 no hardcoded values in the presentation layer.
