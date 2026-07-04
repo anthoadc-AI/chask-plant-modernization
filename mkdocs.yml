@@ -1,0 +1,64 @@
+site_name: Panificadora Chask — Plant Modernization
+site_url: https://anthoadc-AI.github.io/chask-plant-modernization/
+repo_url: https://github.com/anthoadc-AI/chask-plant-modernization
+repo_name: anthoadc-AI/chask-plant-modernization
+site_author: Anthony Davila
+site_description: >-
+  Portfolio repository documenting the plant modernization and energy
+  optimization of Panificadora Chask (2020–2022), executed by INGEDAV S.R.L.
+
+docs_dir: docs
+
+theme:
+  name: material
+  palette:
+    - scheme: default
+      primary: teal
+      accent: deep orange
+      toggle:
+        icon: material/brightness-7
+        name: Switch to dark mode
+    - scheme: slate
+      primary: teal
+      accent: deep orange
+      toggle:
+        icon: material/brightness-4
+        name: Switch to light mode
+  features:
+    - navigation.tabs
+    - navigation.sections
+    - navigation.top
+    - search.suggest
+    - content.code.copy
+    - content.tabs.link
+
+markdown_extensions:
+  - admonition
+  - attr_list
+  - tables
+  - pymdownx.details
+  - pymdownx.highlight:
+      anchor_linenums: true
+  - pymdownx.tabbed:
+      alternate_style: true
+  - pymdownx.superfences:
+      custom_fences:
+        - name: mermaid
+          class: mermaid
+          format: !!python/name:pymdownx.superfences.fence_code_format
+
+nav:
+  - Home: index.md
+  - Project Management:
+    - Overview: project-management/index.md
+    - Charter: project-management/charter.md
+    - Schedule & Gantt: project-management/schedule.md
+    - WBS: project-management/wbs.md
+    - Risk Register: project-management/risk-register.md
+    - Cost Baseline: project-management/cost-baseline.md
+  - Data:
+    - Data Dictionary: data-dictionary.md
+  - Analysis:
+    - Key Findings: findings.md
+  - Energy & Process: energy-analysis.md
+  - About: about.md
