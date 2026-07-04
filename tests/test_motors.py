@@ -75,28 +75,30 @@ class TestReconciliation:
         result = reconciliation(self.OBSERVED)
         for key in (
             "theoretical_motor_kwh_mo",
-            "non_motor_kwh_mo",
             "observed_kwh_mo",
-            "gap_kwh_mo",
+            "residual_kwh_mo",
             "motor_share_pct",
-            "explained_pct",
+            "residual_share_pct",
+            "residual_allocation_note",
         ):
             assert key in result
 
-    def test_motor_share_between_30_and_80_pct(self):
-        # Motors expected to explain 40–70% of observed savings
+    def test_motor_share_between_50_and_75_pct(self):
+        # Motors (independently calculated) explain ~61% of observed savings
         result = reconciliation(self.OBSERVED)
-        assert 30 < result["motor_share_pct"] < 80
+        assert 50 < result["motor_share_pct"] < 75
 
-    def test_explained_pct_reasonable(self):
-        # Combined motor + non-motor attribution should cover most of observed savings
+    def test_residual_equals_observed_minus_theoretical(self):
+        # residual is derived, not from a parallel sum — verify arithmetic
         result = reconciliation(self.OBSERVED)
-        # With our inventory + NON_MOTOR_SAVINGS_BREAKDOWN total ≈ observed
-        # The gap_kwh_mo can be small positive or negative depending on rounding
-        assert abs(result["gap_kwh_mo"]) < 3_000
+        expected = result["observed_kwh_mo"] - result["theoretical_motor_kwh_mo"]
+        assert abs(result["residual_kwh_mo"] - expected) < 0.2
 
-    def test_tolerance_with_custom_inventory(self):
-        # Test that reconciliation tolerance is within 25% of observed
+    def test_motor_plus_residual_shares_sum_to_100(self):
         result = reconciliation(self.OBSERVED)
-        tolerance = 0.25 * self.OBSERVED
-        assert abs(result["gap_kwh_mo"]) <= tolerance
+        total = result["motor_share_pct"] + result["residual_share_pct"]
+        assert abs(total - 100.0) < 0.2
+
+    def test_residual_allocation_note_mentions_not_metered(self):
+        result = reconciliation(self.OBSERVED)
+        assert "not separately metered" in result["residual_allocation_note"].lower()

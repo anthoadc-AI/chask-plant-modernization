@@ -57,21 +57,27 @@ New motors: IE3-class premium efficiency (per IEC 60034-30-1, 2–15 kW band).
 
 ## 3. Reconciliation: Theoretical vs. Observed Savings
 
-| Item | kWh/month | Share of observed |
-|---|---|---|
-| Motor fleet replacement (theoretical) | 7,193 | 61.1% |
-| Defective connections correction | 2,000 | 17.0% |
-| Phantom load elimination | 1,500 | 12.8% |
-| Automation / demand shaping | 1,074 | 9.1% |
-| **Total explained** | **11,767** | **~100%** |
-| **Observed SS savings** (pre − SS mean) | **11,765** | — |
-| **Unexplained gap** | **−2** | **~0%** |
+The motor-fleet calculation (row 1) is the **only independently derived figure**.
+The residual three items are an **estimated allocation of the residual** based on
+field-diagnostic findings. Individual components were not separately metered.
+
+| Item | kWh/month (central) | Range | Basis |
+|---|---|---|---|
+| Motor fleet replacement (**theoretical**) | 7,193 | — | Computed from `motors.py` formula |
+| ↳ Defective connections | ~2,000 | 1,800–2,200 | High-resistance connections in panel (diagnostic) |
+| ↳ Phantom / idle load | ~1,500 | 1,200–1,800 | Motors energized off-shift (diagnostic) |
+| ↳ Automation / demand shaping | ~1,074 | 800–1,300 | PLC-controlled peak reduction (diagnostic) |
+| **Observed SS savings** (pre − SS mean) | **11,765** | — | Dataset: 51,827 − 40,062 kWh/mo |
+| **Residual** (observed − theoretical) | **~4,572** | — | Attributed to field-diagnostic items above |
+
+> ⚠️ **Allocation is indicative; individual components were not separately metered.**
+> The motor calculation explains ~61% of the observed reduction. The remaining
+> ~39% residual is *consistent* with the field-diagnostic findings — it is not
+> a separately verified quantity.
 
 The observed savings are pre mean (51,827 kWh/mo) − steady-state mean (40,062 kWh/mo).
-The near-zero gap confirms the motor inventory and non-motor attribution together
-account for essentially all observed savings. The non-motor items (connections,
-phantom load, automation) are documented qualitatively in the engineering report
-and accounted for ~39% of total savings.
+Motor replacement accounts for ~61% of the reduction; the residual ~39% is consistent
+with connections, phantom load, and automation improvements per the engineering report.
 
 ---
 

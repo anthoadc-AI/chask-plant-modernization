@@ -14,6 +14,14 @@ Assumptions (documented; see ``docs/energy-analysis.md``):
 
 Savings formula per motor:
     savings_kwh_mo = P_mec_kW × h/mo × (1/η_old − 1/η_new)
+
+Reconciliation note:
+    The theoretical motor savings (~7,200 kWh/mo) account for ~61% of the
+    observed reduction.  The remaining ~39% is a *residual* attributed to
+    non-motor improvements identified in the field diagnostic (high-resistance
+    connections, phantom load, demand-shaping automation).  These three items
+    were NOT separately metered; the breakdown below is an estimated allocation
+    of the residual consistent with the diagnostic findings.
 """
 
 from __future__ import annotations
@@ -47,12 +55,24 @@ MOTOR_INVENTORY: list[dict] = [
     _m("Soplante horno rot.", 15.0, 2, 0.820, 0.930, 600),
 ]
 
-# Non-motor savings attribution (documented explanations for the observed gap)
-NON_MOTOR_SAVINGS_BREAKDOWN: dict[str, float] = {
-    "defective_connections_kwh_mo": 2_000.0,  # excess resistance in wiring
-    "phantom_load_kwh_mo": 1_500.0,  # motors running idle/off-peak
-    "automation_peak_reduction_kwh_mo": 1_074.0,  # demand shaping by PLC
+# Estimated allocation of the non-motor residual.
+# These figures are indicative; individual components were NOT separately metered.
+# They reflect the field-diagnostic categories and must be presented with ranges.
+# Central values sum to approximately the observed residual (~4,570 kWh/mo).
+NON_MOTOR_RESIDUAL_ALLOCATION: dict[str, float] = {
+    "defective_connections_kwh_mo": 2_000.0,  # range: 1,800–2,200
+    "phantom_load_kwh_mo": 1_500.0,  # range: 1,200–1,800
+    "automation_peak_reduction_kwh_mo": 1_074.0,  # range:   800–1,300
 }
+
+# Keep legacy alias so callers that import the old name still work
+NON_MOTOR_SAVINGS_BREAKDOWN = NON_MOTOR_RESIDUAL_ALLOCATION
+
+_RESIDUAL_ALLOCATION_NOTE: str = (
+    "Allocation is indicative; individual components were not separately metered. "
+    "Ranges: connections 1,800–2,200 kWh/mo, phantom load 1,200–1,800 kWh/mo, "
+    "automation 800–1,300 kWh/mo."
+)
 
 
 def motor_savings_detail(
@@ -106,37 +126,32 @@ def total_motor_savings_kwh_mo(inventory: list[dict] | None = None) -> float:
 def reconciliation(
     observed_savings_kwh_mo: float,
     inventory: list[dict] | None = None,
-    non_motor: dict | None = None,
+    non_motor: dict | None = None,  # accepted but not used to compute residual
 ) -> dict:
     """Compare theoretical motor savings vs. observed dataset savings.
 
-    The gap between theoretical and observed is attributed to non-motor
-    improvements (defective connections, phantom load, automation).
+    Only the motor-fleet calculation is independently derived.  The residual
+    (observed − theoretical) is consistent with non-motor improvements found
+    in the field diagnostic, but those items were not separately metered.
 
     Args:
-        observed_savings_kwh_mo: Mean monthly kWh reduction (pre − post/SS).
+        observed_savings_kwh_mo: Mean monthly kWh reduction (pre − SS mean).
         inventory: Motor inventory. Defaults to :data:`MOTOR_INVENTORY`.
-        non_motor: Non-motor savings dict. Defaults to
-            :data:`NON_MOTOR_SAVINGS_BREAKDOWN`.
+        non_motor: Accepted for API compatibility; not used to compute residual.
 
     Returns:
-        Dict with ``theoretical_kwh_mo``, ``non_motor_kwh_mo``,
-        ``explained_kwh_mo``, ``gap_kwh_mo``, ``motor_share_pct``,
-        ``non_motor_share_pct``, ``unexplained_pct``.
+        Dict with ``theoretical_motor_kwh_mo``, ``observed_kwh_mo``,
+        ``residual_kwh_mo``, ``motor_share_pct``, ``residual_share_pct``,
+        and ``residual_allocation_note``.
     """
     theoretical = total_motor_savings_kwh_mo(inventory)
-    nm = non_motor or NON_MOTOR_SAVINGS_BREAKDOWN
-    non_motor_total = sum(nm.values())
-    explained = theoretical + non_motor_total
-    gap = observed_savings_kwh_mo - explained
+    residual = observed_savings_kwh_mo - theoretical
 
     return {
         "theoretical_motor_kwh_mo": round(theoretical, 1),
-        "non_motor_kwh_mo": round(non_motor_total, 1),
-        "explained_kwh_mo": round(explained, 1),
         "observed_kwh_mo": round(observed_savings_kwh_mo, 1),
-        "gap_kwh_mo": round(gap, 1),
+        "residual_kwh_mo": round(residual, 1),
         "motor_share_pct": round(theoretical / observed_savings_kwh_mo * 100, 1),
-        "non_motor_share_pct": round(non_motor_total / observed_savings_kwh_mo * 100, 1),
-        "explained_pct": round(explained / observed_savings_kwh_mo * 100, 1),
+        "residual_share_pct": round(residual / observed_savings_kwh_mo * 100, 1),
+        "residual_allocation_note": _RESIDUAL_ALLOCATION_NOTE,
     }
