@@ -18,7 +18,7 @@ from chask.pipeline.transform import to_analytics
 from chask.pipeline.validate import validate
 
 sys.path.insert(0, str(Path(__file__).parent.parent))
-from _components import kpi_card, render_footer  # noqa: E402
+from _components import format_delta, kpi_card, render_footer  # noqa: E402
 
 
 @st.cache_data
@@ -70,7 +70,7 @@ for col, (_, row) in zip(all_cols, hf.iterrows()):
         col,
         title=row["metric"],
         value_str=_format_value(row["metric"], row["post_mean"]),
-        delta_str=str(row["change"]),
+        delta_str=format_delta(row["change"]),
         delta_color=_delta_color(row["direction"]),
     )
 

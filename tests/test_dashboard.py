@@ -6,6 +6,7 @@ produces data consistent with the CLAUDE.md ground truth.
 
 from __future__ import annotations
 
+import re
 import sys
 from pathlib import Path
 
@@ -69,3 +70,20 @@ class TestHeadlineFindings:
         hf = headline_findings(df)
         for col in ("metric", "pre_mean", "post_mean", "change", "direction"):
             assert col in hf.columns
+
+
+class TestDeltaFormat:
+    """Verify that no rendered st.metric delta contains more than one decimal."""
+
+    _BAD_DECIMAL = re.compile(r"\d+\.\d{2,}")
+
+    @pytest.mark.parametrize("page_path", _PAGES)
+    def test_no_delta_has_excess_decimals(self, page_path: str) -> None:
+        at = AppTest.from_file(page_path, default_timeout=60)
+        at.run()
+        assert not at.exception, f"Page {page_path} raised: {at.exception}"
+        for m in at.metric:
+            delta = m.delta or ""
+            assert not self._BAD_DECIMAL.search(delta), (
+                f"Delta {delta!r} on page {page_path} has more than one decimal place"
+            )

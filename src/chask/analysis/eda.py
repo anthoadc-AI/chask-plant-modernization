@@ -97,7 +97,7 @@ def headline_findings(df: pd.DataFrame) -> pd.DataFrame:
     rows = []
 
     pm, pom, ch, cu, di = _pct("consumo_kwh")
-    rows.append(("Energy consumption (kWh)", pm, pom, ch, di))
+    rows.append(("Energy consumption (kWh)", pm, pom, cu, di))
 
     pm, pom, ch, cu, di = _pct("intensity_kwh_kg")
     rows.append(("Energy intensity (kWh/kg)", pm, pom, cu, di))

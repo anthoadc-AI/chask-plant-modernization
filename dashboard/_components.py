@@ -4,6 +4,18 @@ from __future__ import annotations
 
 import streamlit as st
 
+
+def format_delta(val: float | str) -> str:
+    """Format a delta value for ``st.metric`` — one decimal and ``%`` sign.
+
+    Pre-formatted strings (e.g. ``"+7.5 pp"``, ``"→ $1,200/mo"``) are
+    returned unchanged. Raw floats are formatted as ``"+X.X%"``.
+    """
+    if isinstance(val, str):
+        return val
+    return f"{val:+.1f}%"
+
+
 FOOTER_DISCLAIMER: str = (
     "Dataset is a documented reconstruction calibrated to the real project outcomes; "
     "original client records are confidential. "
