@@ -4,4 +4,4 @@ import chask
 
 
 def test_version():
-    assert chask.__version__ == "1.0.0"
+    assert chask.__version__ == "1.0.1"

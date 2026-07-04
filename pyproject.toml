@@ -4,7 +4,7 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "chask"
-version = "1.0.0"
+version = "1.0.1"
 description = "Data engineering and data science for the Panificadora Chask plant modernization project"
 readme = "README.md"
 requires-python = ">=3.10"
