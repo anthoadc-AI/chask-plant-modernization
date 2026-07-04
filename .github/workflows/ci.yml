@@ -41,3 +41,8 @@ jobs:
 
       - name: Smoke test — energy
         run: make energy
+
+      - name: Docs build (strict)
+        run: |
+          pip install mkdocs-material
+          mkdocs build --strict
