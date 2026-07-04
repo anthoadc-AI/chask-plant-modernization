@@ -1,0 +1,32 @@
+cff-version: 1.2.0
+title: "Panificadora Chask Plant Modernization — Data & Analysis Repository"
+message: >-
+  If you use this project or dataset in academic or professional work,
+  please cite it using the metadata below.
+type: software
+authors:
+  - family-names: "Dávila"
+    given-names: "Anthony"
+    email: anthoadc@gmail.com
+repository-code: "https://github.com/anthoadc-AI/chask-plant-modernization"
+url: "https://anthoadc-AI.github.io/chask-plant-modernization/"
+license: MIT
+version: "1.0.0"
+date-released: "2026-07-03"
+abstract: >-
+  End-to-end portfolio repository documenting the plant modernization and
+  energy optimization of Panificadora Chask, an industrial bakery in Punata,
+  Cochabamba, Bolivia (Dec 2020 – Jun 2022), executed by INGEDAV S.R.L.
+  Includes a reproducible data pipeline, statistical analysis, energy KPI
+  models, ROI scenarios, Streamlit dashboard, and MkDocs documentation site.
+  The monthly dataset is a documented reconstruction (seed=42) calibrated to
+  the engineering report metrics; original client records are confidential.
+keywords:
+  - energy-efficiency
+  - data-engineering
+  - data-science
+  - project-management
+  - industrial-engineering
+  - streamlit
+  - python
+  - bolivia
