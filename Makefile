@@ -1,7 +1,7 @@
 .PHONY: install lint format test pipeline datagen figures analysis energy dashboard docs-serve docs-build
 
 install:
-	pip install -e ".[dev]"
+	pip install -e ".[dev,dashboard]"
 
 lint:
 	ruff check src tests
