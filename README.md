@@ -11,7 +11,7 @@
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
 [![Python](https://img.shields.io/badge/python-3.10%20%7C%203.11%20%7C%203.12-blue)](pyproject.toml)
 
-**📊 Live Dashboard**: `<STREAMLIT_URL>` *(deploy via [dashboard/README.md](dashboard/README.md))*  
+**📊 Live Dashboard**: [chask-plant-modernization.streamlit.app](https://chask-plant-modernization-lnmixnxrmfdpvxm7ub5gqr.streamlit.app/)  
 **📚 Documentation**: [anthoadc-AI.github.io/chask-plant-modernization](https://anthoadc-AI.github.io/chask-plant-modernization/)  
 **📋 Case study**: [CASE_STUDY.md](CASE_STUDY.md)  
 **📔 Notebooks**: [`notebooks/`](notebooks/)
