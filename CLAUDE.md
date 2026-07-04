@@ -98,3 +98,43 @@ actually shows.** Ground truth from `data/raw/monthly_reconstructed.csv`
 
 Work strictly within the scope of the phase requested. At the end of each
 phase: run `make lint test`, report results, commit, tag, and stop for review.
+
+## Biographical accuracy
+
+**Biographical and credential information about Anthony Dávila must never be
+invented, embellished, or extrapolated. Only the facts in the verified-bio
+block below or explicitly provided by Anthony may be used. The MIT xPRO
+certificate is IN PROGRESS (expected Aug 2026) until Anthony says otherwise.
+When in doubt, omit and ask.**
+
+### Verified bio — Anthony Dávila (source: LinkedIn, Jul 2026)
+
+- **Name**: Anthony Dávila
+- **Professional headline**: Mechanical Engineer | Data Engineer | Python · SQL · Energy Analytics
+- **Location**: Cochabamba, Bolivia (relocating to Houston, TX — authorized to work in the U.S.)
+
+**Education**:
+- B.Sc. Mechanical Engineering (Licenciatura en Ingeniería Mecánica) —
+  Universidad Mayor de San Simón, Cochabamba, 2011–2016
+- Diplomado en Machine Learning y Ciencia de Datos — Universidad Privada
+  Boliviana, 2024–2025
+- MIT xPRO Professional Certificate in Data Engineering — IN PROGRESS
+  (Feb 2026 – Aug 2026, expected completion Aug 2026)
+
+**Certifications**:
+- Machine Learning Specialization (DeepLearning.AI & Stanford University, 2025)
+- Google: Foundations of Data Science; The Power of Statistics;
+  Regression Analysis (2025–2026)
+- Project Management Life Cycle (edX, 2020)
+
+**Experience**:
+- INDA LLC — Director of Engineering and Operations (Founder & CEO),
+  Dec 2024 – present. Sustainable engineering consulting for the food industry;
+  building EnerVision Lite (industrial energy-efficiency analytics platform).
+- INDACORP — Founder & CEO, Jun 2022 – present, Punata. Industrial services:
+  project execution and mechanical design.
+- INGEDAV S.R.L. — Energy Projects Engineer & Director, Feb 2018 – Jun 2022,
+  Cochabamba. Formal title during the Chask project.
+
+**Links**: linkedin.com/in/anthony-davila-034b921ba · github.com/anthoadc-AI ·
+anthoadc@gmail.com
