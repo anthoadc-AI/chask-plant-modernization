@@ -18,7 +18,7 @@ Portfolio-grade repository documenting the real consulting engagement executed b
 | 1 | Data Engineering | ✅ Complete |
 | 2 | Data Science | ✅ Complete |
 | 3 | Energy Efficiency & Process Optimization | ✅ Complete |
-| 4 | Visible Products (Dashboard + Docs Site) | 🔲 Pending |
+| 4 | Visible Products (Dashboard + Docs Site) | ✅ Complete |
 | 5 | Portfolio Polish | 🔲 Pending |
 
 ---
@@ -61,7 +61,7 @@ Requires Python >= 3.10.
 ```bash
 make lint    # ruff check + ruff format --check
 make format  # ruff check --fix + ruff format
-make test     # pytest (123 tests)
+make test     # pytest (230 tests)
 make pipeline # run data pipeline (ingest → validate → transform)
 make datagen  # regenerate synthetic daily dataset
 make figures  # generate all analysis figures (reports/figures/)
