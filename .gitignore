@@ -42,3 +42,5 @@ htmlcov/
 .DS_Store
 Thumbs.db
 site/
+prompt-fase-*.md
+prompt-correccion-*.md

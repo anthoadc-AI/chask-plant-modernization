@@ -1,7 +1,7 @@
 # Energy Efficiency & Process Optimization — Technical Summary
 
 **Project**: Panificadora Chask plant modernization  
-**Package**: `chask` v0.4.0  
+**Package**: `chask` v1.0.0  
 **Phase**: 3 — Energy efficiency and process optimization  
 **Data source**: `data/raw/monthly_reconstructed.csv` (reconstructed; see data dictionary)
 

@@ -1,4 +1,4 @@
-# Panificadora Chask — Plant Modernization
+﻿# Panificadora Chask — Plant Modernization
 
 **Portfolio repository** documenting a real industrial consulting engagement:
 the plant modernization and energy optimization of **Panificadora Chask**,
@@ -6,7 +6,7 @@ an industrial bakery in Punata, Cochabamba, Bolivia.
 
 - **Client**: Panificadora Chask
 - **Executing firm**: INGEDAV S.R.L. (Ingeniería, Diseño y Automatización)
-- **Project Director**: Anthony Davila
+- **Project Director**: Anthony Dávila
 - **Period**: December 21, 2020 – June 4, 2022
 - **Intervention cutoff**: August 2021 (new machinery fully operational)
 - **Total investment**: USD 85,000
@@ -30,7 +30,7 @@ All 7 headline metrics improved after the August 2021 intervention.
 
 > **Honest framing**: Sep–Oct 2021 show a commissioning spike in failures (10, 9 vs
 > pre mean 8.1). Steady-state (Dec 2021–May 2022) results are even better:
-> energy ~40,062 kWh/mo (−26.3% vs pre).
+> energy ~40,062 kWh/mo (−22.7% vs pre-period mean of 51,827 kWh; −26.3% vs engineering-report baseline of ~54,388 kWh).
 
 ---
 
@@ -52,7 +52,7 @@ chask-plant-modernization/
 ├── docs/               # Documentation (this site)
 ├── notebooks/          # Jupyter notebooks
 ├── project-management/ # PM artefacts (charter, WBS, schedule, risks, cost)
-��── reports/figures/    # Generated figures (PNG + interactive HTML)
++-- reports/figures/    # Generated figures (PNG + interactive HTML)
 ├── src/chask/          # Python package — all analysis logic
 └── tests/              # pytest unit tests
 ```

@@ -81,7 +81,7 @@ Sep–Oct 2021 commissioning spike is visible and expected.*
 ```
 chask-plant-modernization/
 ├── .github/workflows/      # CI (Python matrix) + docs deploy (GitHub Pages)
-├── dashboard/              # Streamlit multipagina app — 6 pages
+├── dashboard/              # Streamlit multi-page app — 6 pages
 │   └── pages/              # overview · energy · statistics · reliability · ROI · PM
 ├── data/
 │   ├── raw/                # monthly_reconstructed.csv (29 rows, seed=42)
@@ -90,14 +90,14 @@ chask-plant-modernization/
 ├── docs/                   # MkDocs source (data dict, findings, energy analysis, PM, about)
 ├── notebooks/              # Jupyter notebooks (EDA + energy/process)
 ├── project-management/     # Charter, WBS, schedule (Gantt), risk register, cost baseline
-├── reports/figures/        # 10 static PNGs + 5 interactive HTML figures
+├── reports/figures/        # 11 static PNGs + 4 interactive HTML figures
 ├── src/chask/              # Python package — all analysis logic
 │   ├── datagen/            # Reproducible dataset generation
 │   ├── pipeline/           # ingest → validate → transform
 │   ├── analysis/           # EDA, anomaly detection, stats, viz
 │   ├── energy/             # KPIs, motor savings model, load profile, ROI
 │   └── process/            # Throughput and reliability metrics
-└── tests/                  # 230 pytest unit tests
+└── tests/                  # 236+ pytest unit tests
 ```
 
 ---
@@ -109,7 +109,7 @@ Requires Python >= 3.10.
 ```bash
 git clone https://github.com/anthoadc-AI/chask-plant-modernization.git
 cd chask-plant-modernization
-make install        # pip install -e ".[dev]"
+make install        # pip install -e ".[dev,dashboard]"
 make pipeline       # run data pipeline (ingest → validate → transform)
 make test           # run 230+ tests
 make figures        # generate all analysis figures

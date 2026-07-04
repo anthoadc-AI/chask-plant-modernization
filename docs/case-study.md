@@ -28,8 +28,10 @@ and, if warranted, execute a plant modernization program.
 
 The diagnostic phase (Phase 1) revealed four interconnected problems:
 
-**Energy waste.** The plant was consuming approximately 55,000 kWh/month — abnormally
-high for its production volume. The culprit was a fleet of electric motors older than
+**Energy waste.** The plant was consuming approximately 55,000 kWh/month per the
+engineering-report baseline (the reconstructed dataset pre-period mean is 51,827 kWh/month;
+both figures reflect the same operational reality measured at different reference points) —
+abnormally high for its production volume. The culprit was a fleet of electric motors older than
 five years, running at IE1 efficiency levels (75–82%), well below the IE3 premium class
 (88–93%) now standard in industrial applications. Degraded windings, poor connections in
 the distribution panel, and motors running under light or no load compounded the losses.
